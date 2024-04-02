@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  min-height: 100vh;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(0, 0%, 8%);
+}
+
+
+.app{
+  width: 400px;
+  height: max-content;
+  padding: 40px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: hsl(0, 0%, 12%);
+
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: hsl(0, 0%, 100%);
+  user-select: none;
+  border-radius: 16px;
+
+  .profile-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+
+    .profile-info__image{
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      margin-bottom: 14px;
+    }
+    .profile-info__name{
+      font-weight: 600;
+      font-size: 24px;
+    }
+    .profile-info__location{
+      color:hsl(75, 94%, 57%);
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .profile-info__desc{
+      margin-block: 16px;
+      font-weight: 400;
+      font-size: 13px;
+    }
+
+  }
+
+  .user-links{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    gap: 16px;
+
+    .link{
+      width: 100%;
+      height: 50px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: hsl(0, 0%, 20%);
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600
+    ;
+      &:visited{
+        color: hsl(0, 0%, 100%);;
+      }
+
+      &:hover{
+        cursor: pointer;
+        background: hsl(75, 94%, 57%);
+        color: hsl(0, 0%, 20%);
+      }
+    }
+  }
+}
